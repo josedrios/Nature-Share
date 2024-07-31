@@ -1,0 +1,103 @@
+<body>
+    <main>
+      <form id="reg-form"
+      class="default-form"
+      action="/users/registration"
+      method="POST"
+      enctype="application/x-www-form-urlencoded">
+        <h2>Registration Form</h2>
+        <div class="input-section-pair">
+          <label for="username">Username:</label>
+            <input
+              type="text"
+              name="username"
+              id="username"
+              placeholder="Username"
+              autocomplete="off"
+            />
+            <div class="reg-error" id="lengthError"></div>
+            <div class="reg-error" id="alphanumericError"></div>
+            <div class="reg-error" id="startError"></div>
+          </div>
+
+          <div class="input-section-pair">
+            <label for="email">Email:</label>
+            <input
+              type="text"
+              name="email"
+              id="email"
+              placeholder="Email"
+              autocomplete="off"
+            />
+            <div class="reg-error" id="emailError"></div>
+          </div>
+
+          <div class="input-section-pair">
+            <label for="password">Password:</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Password"
+              autocomplete="off"
+            />
+            <div class="reg-error" id="passwordLengthError"></div>
+            <div class="reg-error" id="passwordCaseError"></div>
+            <div class="reg-error" id="numberError"></div>
+            <div class="reg-error" id="specialError"></div>
+          </div>
+
+          <div class="input-section-pair">
+            <label for="confirmPassword">Confirm Password:</label>
+          <input
+            type="password"
+            name="confirmPassword"
+            id="confirmPassword"
+            placeholder="Confirm Password"
+            autocomplete="off"
+          />
+          <div class="reg-error" id="matchError"></div>
+          </div>
+
+          <div class="input-section-pair">
+          <div class="input-section-pair-inline">
+            <label for="accept">Are you above the age of 13?</label>
+            <input
+              id="ageCheck"
+              autocomplete="off"
+              type="checkbox"
+              name="ageCheck"
+              value="2"
+            />
+          </div>
+          <div class="reg-error" id="ageError"></div>
+          </div>
+
+          <div class="input-section-pair">
+          <div class="tos-div">
+            Click to agree to
+          <a
+            autocomplete="off"
+            id="tos"
+            href="http://google.com"
+            target="_blank"
+            name="tosCheck"
+            >TOS & Privacy Rules</a
+          >
+          </div>
+          
+          </div>
+          <input
+            id="sub"
+            autocomplete="off"
+            type="submit"
+            value="Register"
+            disabled="disabled"
+          />
+      </form>
+      <p id="link-ref">Already have an account? <a id="refer-link" href="/login">Log In</a></p>
+      
+      <script src="/public/js/validation.js"></script>
+    </main>
+  </body>
+

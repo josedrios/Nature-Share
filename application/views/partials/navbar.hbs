@@ -1,0 +1,35 @@
+<nav>
+    <ul >
+        <li class="search-nav">
+            <form 
+            class="search-bar"
+            action="/posts/search"
+            method="GET"
+            enctype="application/x-www-form-urlencoded"
+            >
+                <input type="text" id="search-text" class="search-text" name="searchValue" placeholder="Search for Post Name">
+                <button type="submit" class="search-button fa fa-search"></button>
+            </form>
+        </li>
+        <li><a href="/">Home</a></li>
+        <li><a href="/postvideo">Post Video</a></li>
+        
+        {{#if isLoggedIn}}
+        <li><a href="/users/profile/{{user.userId}}">Profile</a></li>
+        {{else}}
+        <li><a href="/login">Profile</a></li>
+        {{/if}}
+        {{#if isLoggedIn}}
+        <div class="logout-section">
+            <div id="hello-user">Hello, <a href="/users/profile/{{user.userId}}">{{user.username}}</a></div>
+            <form action="/users/logout" method="post">
+                <button id="logoutButton" type="submit">Log Out</button>
+            </form>
+        </div>
+        </li>
+        {{else}}
+            <li><a href="/login">Log In</a></li>
+            <li><a href="registration">Registration</a></li>
+        {{/if}}
+    </ul>
+</nav>

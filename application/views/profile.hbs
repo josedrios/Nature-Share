@@ -1,0 +1,27 @@
+<body>
+  <h2 id="profile-header">Profile Page</h2>
+  <div id="profile-layout">
+    <div id="profile-side">
+      <h2 id="details-header">Details</h2>
+      <div id="profile-detail">
+        <h4 id="profile-label">Username:</h4>
+        <h4 id="profile-info">{{user.username}}</h4>
+      </div>
+      <div id="profile-detail">
+        <h4 id="profile-label">Email: </h4>
+        <h4 id="profile-info">{{user.email}}</h4>
+      </div>
+    </div>
+  <main id="post-side">
+    <div>
+      <h2>Recent Posts</h2>
+      <div class="post-section">
+        {{#each posts}}
+          {{> cards this}}
+        {{/each}}
+      </div>
+    </div>  
+  </main>
+  </div>
+  </body>
+

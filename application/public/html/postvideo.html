@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Post Video Page</title>
+  </head>
+  <body>
+    <header>
+      <h1>Post Video Page</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Index</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="registration.html">Registration</a></li>
+          <li><a href="postvideo.html">Post Video</a></li>
+          <li><a href="viewpost.html">View Post</a></li>
+          <li><a href="profile.html">Profile</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h2>Post Video Form</h2>
+      <form>
+        <div>
+          <label for="Post Title">Title:</label>
+          <input type="text" name="title" id="title" placeholder="Title" />
+        </div>
+
+        <div>
+          <label for="Post Description">Description:</label>
+          <input
+            type="text"
+            name="description"
+            id="description"
+            placeholder="Description"
+          />
+        </div>
+
+        <div>
+          <label for="Input Video">Video File:</label>
+          <input id="file" type="file" name="file" />
+        </div>
+
+        <div>
+          Do you accept our
+          <a href="http://google.com" target="_blank">Acceptable Use Policy</a>
+          <input type="checkbox" name="age check" value="2" />
+        </div>
+
+        <br />
+
+        <input type="submit" value="Post Video" />
+      </form>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+<body>
+  <main>
+    <p class="index-greet">Welcome to <span id="in-text-logo">Nature Share</span>, post your <br>experience with nature here!</p>
+    <div class="post-section">
+      {{#each posts}}
+        {{> cards this}}
+      {{/each}}
+    </div>
+    <!--<div id="color-label">Current number of color card(s) displayed:</div>
+    <div id="color-number"></div>
+    <div id="color-list" class="color-list"></div>-->
+    </main>
+</body>

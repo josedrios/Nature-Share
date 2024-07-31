@@ -1,0 +1,47 @@
+<body>
+    <main>
+      <form class="default-form"
+      action="/posts/create"
+      method="POST"
+      enctype="multipart/form-data">
+      <h2>Post Video Form</h2>
+      
+        <div class="input-section-pair">
+          <label for="Post Title">Title:</label>
+          <input type="text" name="title" id="title" placeholder="Title" />
+          <div class="reg-error" id="titleEmpty"></div>
+        </div>
+
+        <div class="input-section-pair">
+          <label for="Post Description">Description:</label>
+          <input
+            type="text"
+            name="description"
+            id="description"
+            placeholder="Description"
+          />
+          <div class="reg-error" id="descriptionEmpty"></div>
+        </div>
+
+        <div class="input-section-pair">
+          <label for="Input Video">Video File:</label>
+          <input id="video-file" type="file" name="uploadVideo" />
+          <div class="reg-error" id="videoEmpty"></div>
+        </div>
+
+        <div class="input-section-pair-inline">
+          Must view our
+          <a id="tos" class="acceptance-use" href="http://google.com" target="_blank"> Acceptable Use Policy</a>
+          <div class="reg-error" id="tosEmpty"></div>
+        </div>
+          <input 
+          id="accept-check" 
+          disabled="disabled"
+          autocomplete="off"
+          type="submit" 
+          value="Post Video" />
+      </form>
+    </main>
+    <script src="/public/js/postvideo.js"></script>
+  </body>
+  

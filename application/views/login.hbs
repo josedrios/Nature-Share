@@ -1,0 +1,38 @@
+<body>
+    <main>
+      <form id="login-form"
+      class="default-form"
+      action="/users/login"
+      method="POST"
+      enctype="application/x-www-form-urlencoded">
+        <h2>Login Form</h2>
+        <div class="input-section-pair">
+          <label for="username">Username:</label>
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="Username"
+          />
+        </div>
+
+        <div class="input-section-pair">
+          <label for="password">Password:</label>
+          <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Password"
+          />
+            <input 
+            id="log-sub"
+            type="submit" 
+            value="Log In" 
+            autocomplete="off"
+            />
+        </div>
+      </form>
+      <p id="link-ref">Don't have an account? <a id="refer-link" href="/registration">Register</a></p>
+    </main>
+  </body>
+

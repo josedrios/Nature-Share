@@ -1,0 +1,27 @@
+<div id="flash-message">
+    {{#if messages.error}}
+        <script>
+        document.getElementById("alert-error").style.display = "inline";
+    </script>
+        <div id="alert-error">{{messages.error}}
+            
+        </div>
+    <script>
+        document.getElementById("alert-error").onclick = function(ev){ 
+        document.getElementById("alert-error").style.display = "none";
+        };
+    </script>
+    {{else}}
+    <script>
+        document.getElementById("alert-success").style.display = "inline";
+    </script>
+        <div id="alert-success">{{messages.success}}
+            
+        </div>
+    <script>
+        document.getElementById("alert-success").onclick = function(ev){ 
+        document.getElementById("alert-success").style.display = "none";
+        };
+    </script>
+    {{/if}}
+</div>
